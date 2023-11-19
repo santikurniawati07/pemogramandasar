@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a = 100;
+    int b = 25;
+    int pilihan;
+    int hasil;
+
+   cout << "Menu Pilihan" << endl;
+   cout << "1. Tambah a dan b" << endl;
+   cout << "2. Kurang a dan b" << endl;
+   cout << "Pilihan Anda: ";
+   cin >> pilihan;
+
+    switch (pilihan) {
+    case 1:
+        hasil = a + b;
+        cout << "Penjumlahan 100 dan 25 menghasilkan: " << hasil << endl;
+        break;
+    case 2:
+        hasil = a - b;
+        cout << "Pengurangan 100 dan 25 menghasilkan: " << hasil << endl;
+        break;
+    default:
+        cout << "Pilihan Anda salah." << endl;
+        break;
+    }
+
+    return 0;
+}
